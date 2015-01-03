@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pranayama", "Pranayama\Pranayama.csproj", "{B7116A52-33CE-44EF-B1EB-9D327B734BBB}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "LucidScribe.Pranayama", "Installer\Lucid Scribe Pranayama.vdproj", "{8429043A-A390-4750-95DD-93AA81FF014F}"
