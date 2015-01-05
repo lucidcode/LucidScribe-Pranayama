@@ -106,13 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A9A3AC4C8A7C44DBAB98F307C7C1F646"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7F551CABE8A04FE5A84124E2575ECD7D"
+        "OwnerKey" = "8:_373BD2069568CF6F3E23F327BDE1FCAC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -124,7 +118,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_373BD2069568CF6F3E23F327BDE1FCAC"
+        "OwnerKey" = "8:_7F551CABE8A04FE5A84124E2575ECD7D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A9A3AC4C8A7C44DBAB98F307C7C1F646"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -224,7 +224,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:3.5.30729"
+                "FrameworkVersion" = "8:3.5.30729"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -259,11 +259,6 @@
             "AssemblyAsmDisplayName" = "8:lucidcode.LucidScribe.Interface, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_369B740A8EA1EDCAA237C4DEAD53DB36"
-                    {
-                    "Name" = "8:lucidcode.LucidScribe.Interface.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:lucidcode.LucidScribe.Interface.dll"
             "TargetName" = "8:"
@@ -290,11 +285,6 @@
             "AssemblyAsmDisplayName" = "8:lucidcode.Controls, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_373BD2069568CF6F3E23F327BDE1FCAC"
-                    {
-                    "Name" = "8:lucidcode.Controls.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:lucidcode.Controls.dll"
             "TargetName" = "8:"
@@ -658,14 +648,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Lucid Scribe Pranayama"
-        "ProductCode" = "8:{73E4D598-A1FC-4FD5-A806-EB2D0CACC789}"
-        "PackageCode" = "8:{30E3A158-FE73-4520-A73B-F786387363A9}"
+        "ProductCode" = "8:{9F91BCD2-A631-4594-97D5-9946ED52BE55}"
+        "PackageCode" = "8:{B38A6B7A-9D3F-4AC3-80CD-0B5F64B15D01}"
         "UpgradeCode" = "8:{C0218038-C124-43B2-835C-ABB9CC8A9FB8}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:lucidcode"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://www.lucid-code.com/Support"
@@ -1189,7 +1180,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C55B1C30F9804D249DF1E072DCF8CCAD"
             {
-            "SourcePath" = "8:..\\Pranayama\\obj\\Debug\\lucidcode.LucidScribe.Plugin.Pranayama.dll"
+            "SourcePath" = "8:..\\Pranayama\\obj\\Release\\lucidcode.LucidScribe.Plugin.Pranayama.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_491A001224CF4D699EA475B2FB5F2890"

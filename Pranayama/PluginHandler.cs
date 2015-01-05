@@ -67,6 +67,15 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
           m_intRepeat = 4;
           m_intCapacity = 900;
         }
+        else if (SelectedExercise == "Heart Breath")
+        {
+          m_intInhale = 7;
+          m_intHoldIn = 0;
+          m_intHoldOut = 0;
+          m_intExhale = 7;
+          m_intRepeat = -1;
+          m_intCapacity = 900;
+        }
 
         return true;
       }

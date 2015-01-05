@@ -31,6 +31,7 @@
       this.components = new System.ComponentModel.Container();
       System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("8:32:16", 0);
       System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Kapalbhati", 0);
+      System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Heart Breath", 0);
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExerciseForm));
       this.pnlPlugins = new lucidcode.Controls.Panel3D();
       this.lstExercises = new System.Windows.Forms.ListView();
@@ -44,9 +45,9 @@
       // 
       // pnlPlugins
       // 
-      this.pnlPlugins.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                  | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+      this.pnlPlugins.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.pnlPlugins.BackColor = System.Drawing.Color.White;
       this.pnlPlugins.Controls.Add(this.lstExercises);
       this.pnlPlugins.Controls.Add(this.Panel3D4);
@@ -58,13 +59,14 @@
       // lstExercises
       // 
       this.lstExercises.Activation = System.Windows.Forms.ItemActivation.OneClick;
-      this.lstExercises.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                  | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+      this.lstExercises.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.lstExercises.BorderStyle = System.Windows.Forms.BorderStyle.None;
       this.lstExercises.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
-            listViewItem2});
+            listViewItem2,
+            listViewItem3});
       this.lstExercises.LargeImageList = this.lstImg;
       this.lstExercises.Location = new System.Drawing.Point(3, 25);
       this.lstExercises.MultiSelect = false;
@@ -85,8 +87,8 @@
       // 
       // Panel3D4
       // 
-      this.Panel3D4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+      this.Panel3D4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.Panel3D4.BackColor = System.Drawing.Color.SteelBlue;
       this.Panel3D4.Controls.Add(this.Label5);
       this.Panel3D4.Controls.Add(this.Label6);
@@ -108,8 +110,8 @@
       // 
       // Label6
       // 
-      this.Label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                  | System.Windows.Forms.AnchorStyles.Right)));
+      this.Label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
       this.Label6.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
       this.Label6.ForeColor = System.Drawing.Color.White;
       this.Label6.Location = new System.Drawing.Point(24, 3);
