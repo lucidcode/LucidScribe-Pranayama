@@ -8,6 +8,7 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
   public class PluginHandler : lucidcode.LucidScribe.Interface.LucidPluginBase
   {
 
+    ExerciseForm exerciseForm = new ExerciseForm();
     private double m_intInhale = 8;
     private double m_intHoldIn = 32;
     private double m_intHoldOut = 0;
@@ -42,46 +43,65 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
     {
       try
       {
-        ExerciseForm formExercise = new ExerciseForm();
-        formExercise = new ExerciseForm();
-        formExercise.ShowDialog();
-
-        SelectedExercise = formExercise.SelectedExercise;
-
-        if (SelectedExercise == "8:32:16")
-        {
-          m_intInhale = 8;
-          m_intHoldIn = 32;
-          m_intHoldOut = 0;
-          m_intExhale = 16;
-          m_intRepeat = -1;
-          m_intCapacity = 900;
-        }
-        else if (SelectedExercise == "Kapalbhati")
-        {
-          // Warm up first
-          m_intInhale = 7;
-          m_intHoldIn = 0;
-          m_intHoldOut = 0;
-          m_intExhale = 7;
-          m_intRepeat = 4;
-          m_intCapacity = 900;
-        }
-        else if (SelectedExercise == "Heart Breath")
-        {
-          m_intInhale = 7;
-          m_intHoldIn = 0;
-          m_intHoldOut = 0;
-          m_intExhale = 7;
-          m_intRepeat = -1;
-          m_intCapacity = 900;
-        }
-
+        exerciseForm.ExerciseChanged += exerciseForm_ExerciseChanged;
+        exerciseForm.ShowDialog();
+        
         return true;
       }
       catch (Exception ex)
       {
         throw (new Exception("The '" + Name + "' plugin failed to initialize: " + ex.Message));
+      }
+    }
+
+    void exerciseForm_ExerciseChanged(string Exercise)
+    {
+      if (SelectedExercise == Exercise)
+      {
+        return;
+      }
+
+      SelectedExercise = Exercise;
+
+      if (SelectedExercise == "8:32:16")
+      {
+        m_intInhale = 8;
+        m_intHoldIn = 32;
+        m_intHoldOut = 0;
+        m_intExhale = 16;
+        m_intRepeat = -1;
+        m_intCapacity = 900;
+      }
+      else if (SelectedExercise == "Kapalbhati")
+      {
+        // Warm up first
+        m_intInhale = 7;
+        m_intHoldIn = 0;
+        m_intHoldOut = 0;
+        m_intExhale = 7;
+        m_intRepeat = 4;
+        m_intCapacity = 900;
+      }
+      else if (SelectedExercise == "Heart Breath")
+      {
+        m_intInhale = 7;
+        m_intHoldIn = 0;
+        m_intHoldOut = 0;
+        m_intExhale = 7;
+        m_intRepeat = -1;
+        m_intCapacity = 900;
+      }
+
+      m_Stage = Stage.Inhaling;
+      m_dtTime = DateTime.Now;
+      m_dblValue = 0;
+    }
+
+    public override System.Windows.Forms.Control SettingsPanel
+    {
+      get
+      {
+        return exerciseForm.settingsControl;
       }
     }
 

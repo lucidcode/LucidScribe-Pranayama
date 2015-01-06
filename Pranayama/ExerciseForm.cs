@@ -13,33 +13,23 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
 {
   public partial class ExerciseForm : Form
   {
-    public String SelectedExercise = "";
+
+    public event ExerciseChangedEventHandler ExerciseChanged;
+    public delegate void ExerciseChangedEventHandler(string Exercise);
 
     public ExerciseForm()
     {
       InitializeComponent();
     }
 
-    private void lstPlaylists_MouseMove(object sender, MouseEventArgs e)
+    private void settingsControl_ExerciseChanged(string Exercise)
     {
-      if (lstExercises.GetItemAt(e.X, e.Y) != null)
+      if (ExerciseChanged != null)
       {
-        lstExercises.Cursor = Cursors.Hand;
+        ExerciseChanged(Exercise);
       }
-      else
-      {
-        lstExercises.Cursor = Cursors.Default;
-      }
-    }
-
-    private void lstPlaylists_SelectedIndexChanged(object sender, EventArgs e)
-    {
-      if (lstExercises.SelectedItems.Count > 0)
-      {
-        SelectedExercise = lstExercises.SelectedItems[0].Text;
-        DialogResult = DialogResult.OK;
-        Close();
-      }
+      DialogResult = DialogResult.OK;
+      Close();
     }
   }
 }
