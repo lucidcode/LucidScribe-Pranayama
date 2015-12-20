@@ -82,6 +82,16 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
         m_intRepeat = 4;
         m_intCapacity = 900;
       }
+      else if (SelectedExercise == "Bhastrika - Ujjayi")
+      {
+        // Warm up first
+        m_intInhale = 7;
+        m_intHoldIn = 0;
+        m_intHoldOut = 0;
+        m_intExhale = 7;
+        m_intRepeat = 4;
+        m_intCapacity = 900;
+      }
       else if (SelectedExercise == "Heart Breath")
       {
         m_intInhale = 7;
@@ -142,6 +152,7 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
               if (SelectedExercise == "Kapalbhati")
               {
                 SelectedExercise = "";
+                Cycle = 0;
                 m_intInhale = 0.5;
                 m_intHoldIn = 0;
                 m_intHoldOut = 0;
@@ -149,10 +160,36 @@ namespace lucidcode.LucidScribe.Plugin.Pranayama
                 m_intRepeat = 81;
                 m_intCapacity = 300;
               }
+              else if (SelectedExercise == "Bhastrika - Ujjayi")
+              {
+                  SelectedExercise = "Bhastrika";
+                  Cycle = 0;
+                  m_intInhale = 2;
+                  m_intHoldIn = 0;
+                  m_intHoldOut = 0;
+                  m_intExhale = 2;
+                  m_intRepeat = 8;
+                  m_intCapacity = 900;
+              }
+              else if (SelectedExercise == "Bhastrika")
+              {
+                  SelectedExercise = "";
+                  Cycle = 0;
+                  m_intInhale = 4;
+                  m_intHoldIn = 0;
+                  m_intHoldOut = 0;
+                  m_intExhale = 8;
+                  m_intRepeat = 8;
+                  m_intCapacity = 900;
+              }
               else
               {
-                m_Stage = Stage.Complete;
-                m_dblValue = 1000;
+                m_intInhale = 7;
+                m_intHoldIn = 0;
+                m_intHoldOut = 0;
+                m_intExhale = 7;
+                m_intRepeat = -1;
+                m_intCapacity = 900;
               }
             }
           }

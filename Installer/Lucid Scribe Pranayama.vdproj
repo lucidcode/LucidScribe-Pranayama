@@ -106,13 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A9A3AC4C8A7C44DBAB98F307C7C1F646"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7F551CABE8A04FE5A84124E2575ECD7D"
+        "OwnerKey" = "8:_373BD2069568CF6F3E23F327BDE1FCAC"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -124,7 +118,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_373BD2069568CF6F3E23F327BDE1FCAC"
+        "OwnerKey" = "8:_7F551CABE8A04FE5A84124E2575ECD7D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A9A3AC4C8A7C44DBAB98F307C7C1F646"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -224,7 +224,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729 "
+                "FrameworkVersion" = "8:3.5.30729  "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -648,15 +648,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Lucid Scribe Pranayama"
-        "ProductCode" = "8:{4EABC8CF-5D3E-4581-B4DB-556DDA35024A}"
-        "PackageCode" = "8:{598228B8-E199-4172-93F6-03DF3162227A}"
+        "ProductCode" = "8:{CA77137D-5691-492E-A537-7D6DB778B1C5}"
+        "PackageCode" = "8:{DDA7CD7B-894B-4259-AF95-275064F76052}"
         "UpgradeCode" = "8:{C0218038-C124-43B2-835C-ABB9CC8A9FB8}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.6"
+        "ProductVersion" = "8:1.0.7"
         "Manufacturer" = "8:lucidcode"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://www.lucid-code.com/Support"

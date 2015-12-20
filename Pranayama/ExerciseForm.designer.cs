@@ -28,40 +28,43 @@
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
-      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExerciseForm));
-      this.lstImg = new System.Windows.Forms.ImageList(this.components);
-      this.settingsControl = new lucidcode.LucidScribe.Plugin.Pranayama.SettingsControl();
-      this.SuspendLayout();
-      // 
-      // lstImg
-      // 
-      this.lstImg.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("lstImg.ImageStream")));
-      this.lstImg.TransparentColor = System.Drawing.Color.Transparent;
-      this.lstImg.Images.SetKeyName(0, "Graph.Plugin2.bmp");
-      // 
-      // settingsControl
-      // 
-      this.settingsControl.BackColor = System.Drawing.Color.LightSteelBlue;
-      this.settingsControl.Location = new System.Drawing.Point(12, 12);
-      this.settingsControl.Name = "settingsControl";
-      this.settingsControl.Size = new System.Drawing.Size(239, 143);
-      this.settingsControl.TabIndex = 6;
-      this.settingsControl.ExerciseChanged += new lucidcode.LucidScribe.Plugin.Pranayama.SettingsControl.ExerciseChangedEventHandler(this.settingsControl_ExerciseChanged);
-      // 
-      // ExerciseForm
-      // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.BackColor = System.Drawing.Color.LightSteelBlue;
-      this.ClientSize = new System.Drawing.Size(263, 167);
-      this.Controls.Add(this.settingsControl);
-      this.Font = new System.Drawing.Font("Verdana", 8.25F);
-      this.ForeColor = System.Drawing.Color.MidnightBlue;
-      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-      this.Name = "ExerciseForm";
-      this.Text = "Lucid Scribe - Pranayama";
-      this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExerciseForm));
+            this.lstImg = new System.Windows.Forms.ImageList(this.components);
+            this.settingsControl = new lucidcode.LucidScribe.Plugin.Pranayama.SettingsControl();
+            this.SuspendLayout();
+            // 
+            // lstImg
+            // 
+            this.lstImg.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("lstImg.ImageStream")));
+            this.lstImg.TransparentColor = System.Drawing.Color.Transparent;
+            this.lstImg.Images.SetKeyName(0, "Graph.Plugin2.bmp");
+            // 
+            // settingsControl
+            // 
+            this.settingsControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.settingsControl.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.settingsControl.Location = new System.Drawing.Point(12, 12);
+            this.settingsControl.Name = "settingsControl";
+            this.settingsControl.Size = new System.Drawing.Size(239, 158);
+            this.settingsControl.TabIndex = 6;
+            this.settingsControl.ExerciseChanged += new lucidcode.LucidScribe.Plugin.Pranayama.SettingsControl.ExerciseChangedEventHandler(this.settingsControl_ExerciseChanged);
+            // 
+            // ExerciseForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ClientSize = new System.Drawing.Size(263, 182);
+            this.Controls.Add(this.settingsControl);
+            this.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "ExerciseForm";
+            this.Text = "Lucid Scribe - Pranayama";
+            this.ResumeLayout(false);
 
     }
 
